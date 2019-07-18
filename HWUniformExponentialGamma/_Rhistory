@@ -1,0 +1,156 @@
+1-ppois(6,8)
+ProbAtleast6in2hrs<-1-ppois(6,8)
+ProbAtleast6in2hrs
+1-pgamma(2,3,4)
+ProbMore2in30Min<-1-pgamma(2,3,4)
+pgamma(2,3,4)
+1-pgamma(2,3,4)
+EGamma<-function(x)
+{
+x/4
+}
+VarFor2<-EGamma(2)
+VarFor3<-EGamma(3)
+EGamma<-function(x)
+{
+x/lambda
+}
+ExpectFor2<-EGamma(2)
+ExpectFor3<-EGamma(3)
+#Variance of Gamma Example
+VGamma<-function(x)
+{
+x/(Lambda^2)
+}
+VarFor2<-VGamma(2)
+VarFor3<-VGamma(3)
+EGamma<-function(x)
+{
+x/lambda
+}
+ExpectFor2<-EGamma(2)
+ExpectFor3<-EGamma(3)
+#Variance of Gamma Example
+VGamma<-function(x)
+{
+x/(lambda^2)
+}
+VarFor2<-VGamma(2)
+VarFor3<-VGamma(3)
+lambda<-4
+#1.)Average arrival rate is 8 trains in 2 hours
+#2.)X~Pois(lambda=8)
+ProbAtleast6in2hrs<-1-ppois(6,8)
+#3.)Probability that More than two trains come wthin30 min
+ProbMore2in30Min<-1-pgamma(2,3,4)
+#Expected Value equation for Gamma Example
+EGamma<-function(x)
+{
+x/lambda
+}
+ExpectFor2<-EGamma(2)
+ExpectFor3<-EGamma(3)
+#Variance of Gamma Example
+VGamma<-function(x)
+{
+x/(lambda^2)
+}
+VarFor2<-VGamma(2)
+VarFor3<-VGamma(3)
+lambda<-4
+#1.)Average arrival rate is 8 trains in 2 hours
+#2.)X~Pois(lambda=8)
+ProbAtleast6in2hrs<-1-ppois(6,8)
+#3.)Probability that More than two trains come wthin30 min
+ProbMore2in30Min<-1-pgamma(2,3,lambda)
+#Expected Value equation for Gamma Example
+EGamma<-function(x)
+{
+x/lambda
+}
+ExpectFor2<-EGamma(2)
+ExpectFor3<-EGamma(3)
+#Variance of Gamma Example
+VGamma<-function(x)
+{
+x/(lambda^2)
+}
+VarFor2<-VGamma(2)
+VarFor3<-VGamma(3)
+a<-0
+b<-1
+Sim<-1000
+PDF<-function(x)
+{
+(4/3)*x *(2-x^2)
+}
+Expected<-sqrt((2-sqrt(4-3*Sim)))
+ExpectedVal<-mean(Expected)
+VarVal<-var(Expected)
+Sim<-1000
+PDF<-function(x)
+{
+(4/3)*x *(2-x^2)
+}
+Expected<-sqrt((2-sqrt(4-3*Sim)))
+ExpectedVal<-mean(Expected)
+VarVal<-var(Expected)
+Expected<-sqrt((2-sqrt(4 - 3 * Sim)))
+a<-0
+b<-1
+Sim<-runif(1000)
+PDF<-function(x)
+{
+(4/3)*x *(2-x^2)
+}
+Expected<-sqrt((2 - sqrt(4 - 3 * Sim)))
+ExpectedVal<-mean(Expected)
+VarVal<-var(Expected)
+Figures<-c(ExpectedValue = ExpectedVal, SimulatedVariance = VarVal)
+Figures
+set.seed(33)
+Figures
+a<-1
+b<-2
+Sim<-runif(2000)
+PDF<-function(x)
+{
+(4/3)*x *(2-x^2)
+}
+Expected<-sqrt((2 - sqrt(4 - 3 * Sim)))
+ExpectedVal<-mean(Expected)
+VarVal<-var(Expected)
+Figures<-c(ExpectedValue = ExpectedVal, SimulatedVariance = VarVal)
+Figures
+lambda1<- 1/9
+originalF<-function(x)
+{
+lambda1*exp(-x/9)
+}
+IntegratedF<-function(x)
+{
+-exp(-x/9)
+}
+lambda1<- 1/9
+originalF<-function(x)
+{
+lambda1*exp(-x/9)
+}
+IntegratedF<-function(x)
+{
+-exp(-x/9)
+}
+ExpectedLife<-pexp(13,1/9) - pexp(4,1/9)
+ExpectedLife<-pexp(13,1/9) - pexp(4,1/9)
+integrate(originalF,lower=4,upper=13)$value
+ExpectedLife
+PercentilePlease<-qexp(.95,1/9)
+PercentilePlease
+pexp(26,lambda1,lower=FALSE)/pexp(11,lambda1,lower=FALSE)
+Route3
+Route1<-pexp(26,lambda1,lower=FALSE)/pexp(11,lambda1,lower=FALSE)
+Route1
+Route<-1-pexp(15,lambda1)
+Route
+Route3<-pexp(15,lambda1,lower=FALSE)
+Route3

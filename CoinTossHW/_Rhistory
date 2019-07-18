@@ -1,0 +1,155 @@
+CoinToss
+coinSpace<-c("H","T")
+theta<-.5
+N<-3
+CoinToss<- sample(coinSpace,
+size =N,
+replace=TRUE,
+prob = c(theta,1-theta))
+CoinToss
+CoinToss
+CoinToss
+CoinToss
+CoinToss
+CoinToss
+CoinToss
+CoinToss
+CoinToss
+coinToss1<-data.frame(
+outcomes<-c("HHH","HHT","HTH","HTT","THH","THT","TTT","TTH"),
+probability<-c(1/8)
+)
+View(coinToss1)
+prob<-(probability(outcomes=="HHH"|outcomes=="TTT"))
+probability(outcomes=="HHH"|"TTT")
+probCoin<-function(outcomes)
+{
+1/8
+}
+probCoin()
+probCoin(outcomes=="HHH"|outcomes=="TTT")
+1/outcomes
+1/(outcomes)
+probCoin()
+1/n(outcomes)
+cointToss1.count
+cointToss1.shape
+len(coinToss1)
+1/4
+probAllSame
+probAllSame<-function(outcomes)
+{
+for(i in outcomes)
+{
+if(outcomes== "HHH" | outcomes=="TTT")
+{
+1/4
+}
+}
+}
+probAllSame()
+probAllSame(outcomes)
+probAllSame(outcomes=="HHH")
+##Only Two occursions when outcomes= all same
+#Therefore value = 1/4
+1/4
+probAllSame()
+probAllSame<-function(outcomes)
+{
+##Only Two occursions when outcomes= all same
+#Therefore value = 1/4
+1/4
+}
+probAllSame()
+table(cointToss1)
+table(outcomes,probability)
+#StartAssignment
+coinToss1<-data.frame(
+outcomes<-c("HHH","HHT","HTH","HTT","THH","THT","TTT","TTH"),
+probability<-c(1/8,1/8,1/8,1/8,1/8,1/8,1/8,1/8)
+)
+table(outcomes,probability)
+probAllSame<-function(outcomes)
+{
+if(outcomes=="HHH")
+{
+m<-.125
+}
+if(outcomes=="TTT")
+{
+n<-.125
+}
+probAnswer<-n+m
+print(probAnswer)
+}
+probAllSame()
+probAllSame(outcomes)
+probAnswer<-n+m
+{
+if(outcomes=="HHH")
+{
+m<-.125
+}
+if(outcomes=="TTT")
+{
+n<-.125
+}
+probAnswer<-n+m
+}
+probAnswer<-k+m
+probAllSame<-function(outcomes)
+{
+for(i in outcomes)
+{
+if(outcomes=="HHH")
+{
+m<-.125
+}
+if(outcomes=="TTT")
+{
+k<-.125
+}
+probAnswer<-k+m
+}
+print(probAnswer)
+}
+probAllSame(outcomes)
+probAllSame<-function(outcomes)
+{
+for(i in outcomes)
+{
+if(outcomes=="HHH"|"TTT")
+{
+m<-2(.125)
+}
+}
+print(m)
+}
+probAllSame(outcomes)
+View(coinToss1)
+coinToss<-expand.grid(coin1=c("H","T"),coin2=c("H","T"),coin3=c("H","T"))
+coin1=c("H","T")
+coin2=c("H","T")
+coin3=c("H","T")
+probability<-c(1/8)
+coinToss$probability<-probability
+#P(All Same)
+probSame<-function(coinToss)
+{
+1/4
+}
+#P(Two Heads)
+probHeadsWins<-function(coinToss)
+{
+1/2
+}
+#Second Table
+Omega<-expand.grid(coin1=0:1,coin2=0:1,coin3=0:1)
+#Calculating # of times value in table = 1 in each row (shows # of times heads was landed)
+n.heads<-apply(Omega,1,sum)
+cbind(Omega,n.heads)
+#Tells # of times heads was hit (top row is occurance count, bottom is num times happened)
+table(n.heads)
+vals<-table(n.heads)/length(n.heads)
+#Plotting Prob. Density
+plot(vals,ylab="Occurrances based on table" ,xlab="# of Times Heads")

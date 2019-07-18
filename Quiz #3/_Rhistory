@@ -1,0 +1,11 @@
+gender<-c(1:0)
+probOneBoyOnly<-(4*.5^4)
+probBoy<-1/2
+probOneBoyOnly<-(4*probBoy^4)
+probOneBoyOnly
+probThreeGilsOneBoy<-(probBoy^3*probBoy)
+probThreeGilsOneBoy
+probThreeGirlsOneBoy<-(probBoy^3*probBoy)
+probTwoandTwo<-(probBoy^4 * 3)
+probTwoandTwo
+3*(1/16)

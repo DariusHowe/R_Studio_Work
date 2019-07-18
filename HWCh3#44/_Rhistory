@@ -1,0 +1,222 @@
+coinToss<-expand.grid(coin1=c("H","T"),coin2=c("H","T"),coin3=c("H","T"))
+View(coinToss)
+X<-apply(coinToss,"H",sum)
+coin1=c("H","T")
+coin2=c("H","T")
+coin3=c("H","T")
+X<-apply(coinToss,"H",sum)
+#Let rand.var. X be # of Heads landed
+X.heads<-apply(coinToss,"H",sum)
+#Let rand.var. X be # of Heads landed
+X.heads<-apply(coinToss,1,sum)
+#Let rand.var. X be # of Heads landed
+X.heads<-apply(coinToss,"H",sum)
+#Let rand.var. X be # of Heads landed
+X<-apply(coinToss,"H",sum)
+#Let rand.var. X be # of Heads landed
+X<-apply(coinToss$coin1,"H",sum)
+coin1=c("H","T")
+coinToss<-expand.grid(coin1=0:1,coin2=0:1,coin3=0:1)
+X<-apply(coinToss,1,sum)
+X
+#Let rand.var. X be # of Heads landed
+X<-apply(coinToss,0,sum)
+#Let rand.var. X be # of Heads landed
+X<-apply(coinToss,1,sum)
+X
+cbind(coinToss,X)
+cbind(coinToss,Y)
+Y<-apply(coinToss,1,sum)
+cbind(coinToss,X)
+cbind(coinToss,Y)
+cbind(coinToss,X)
+#Let rand.var. X be # of Tails landed
+X<-apply(coinToss,1,sum)
+cbind(coinToss,X)
+#Table that contains all possible outcomes of coin toss 3 coins
+coinToss<-expand.grid(coin1=1:0,coin2=1:0,coin3=1:0)
+coinToss
+#Let rand.var. X be # of Tails landed
+X<-apply(coinToss,1,sum)
+cbind(coinToss,X)
+coinToss<-expand.grid(coin1=c("H","T"),coin2=c("H","T"),coin3=c("H","T"))
+coin1=c("H","T")
+coin2=c("H","T")
+coin3=c("H","T")
+probability<-c(1/8)
+coinToss$probability<-probability
+#P(All Same)
+probSame<-function(coinToss)
+{
+1/4
+}
+#P(Two Heads)
+probHeadsWins<-function(coinToss)
+{
+1/2
+}
+#Second Table
+Omega<-expand.grid(coin1=0:1,coin2=0:1,coin3=0:1)
+#Calculating # of times value in table = 1 in each row (shows # of times heads was landed)
+n.heads<-apply(Omega,1,sum)
+cbind(Omega,n.heads)
+#Tells # of times heads was hit (top row is occurance count, bottom is num times happened)
+table(n.heads)
+vals<-table(n.heads)/length(n.heads)
+#Plotting Prob. Density
+plot(vals,ylab="Occurrances based on table" ,xlab="# of Times Heads")
+coinToss<-expand.grid(coin1=1:0,coin2=1:0,coin3=1:0)
+coin1=c("H","T")
+coin2=c("H","T")
+coin3=c("H","T")
+#Let rand.var. X be # of Tails landed
+X<-apply(coinToss,1,sum)
+cbind(coinToss,X)
+heads.mean<-mean(X)
+heads.mean
+heads.variance<-var(X)
+table(X)
+Heads.table<-table(X)
+coinSpace<-(coin1=c("H","T"), coin2=c("H","T"), coin3=c("H","T"))
+coinSpace<-c("H","T")
+coinSim<-sample(coinSpace,3,replace=TRUE)
+coinSim
+coinSim
+CoinSim2<-function(n){
+coinSim
+}
+CoinSim2(10000)
+CoinSim2<-function(n){
+sample(coinSpace,n,replace=TRUE)
+}
+CoinSim2(10000)
+CoinSim2<-function(n){
+coinSim(n)
+}
+CoinSim2(10000)
+CoinSim1<-function(n)
+{
+n<-3
+coinSim<-sample(coinSpace,n,replace=TRUE)
+}
+CoinSim1(3)
+CoinSim1()
+CoinSim1<-function(n)
+{
+coinSim<-sample(coinSpace,n,replace=TRUE)
+}
+CoinSim1()
+CoinSim1(3)
+coinSim
+CoinSim1()
+CoinSim1(1)
+CoinSim1(coinSim)
+coinSim(n)
+coinSim(n)
+coinSim()
+coinSim<-sample(coinSpace,3,replace=TRUE)
+CoinSim2<-function(n){
+coinSim()
+}
+CoinSim2(10000)
+coinSim<-sample(coinSpace,3,replace=TRUE)
+coinSpace<-c("HHH","HHT","HTH","HTT","THH","TTH","THT","TTT")
+CoinSim2<-function(n){
+coinSim()
+}
+View(CoinSim1)
+CoinSim2(10000)
+coinSim
+coinSim<-sample(coinSpace,3,replace=TRUE)
+coinSim
+coinSim
+CoinSim2<-function(n){
+coinSim()
+}
+CoinSim2
+CoinSim2(1000)
+CoinSim2(2)
+CoinSim2<-function(n){
+coinSim(n)<-sample(coinSpace,n,replace=TRUE)
+}
+CoinSim2(2)
+CoinSim2<-function(n){
+sample(coinSpace,n,replace=TRUE)
+}
+CoinSim2(3)
+CoinSim2(10000)
+Coins<-c(000,001,010,011,100,101,110,111)
+coinSim1<-sample(Coins,3,replace=TRUE)
+CoinSim1<-function(n){
+sample(Coins,n,replace=TRUE)
+}
+CoinSim1(10000)
+CoinsMean<-mean(CoinSim1(10000))
+coinSpace<-c(1:0)
+coinSim<-sample(coinSpace,3,replace=TRUE)
+CoinSim2<-function(n){
+sample(coinSpace,n,replace=TRUE)
+}
+CoinSim2(1000)
+coinSim1<-sample(coinSpace,3,replace=TRUE)
+CoinSim1<-function(n){
+sample(coinSpace,n,replace=TRUE)
+}
+coinS<-c(1:0)
+coinSim1<-sample(coinS,3,replace=TRUE)
+CoinSim1<-function(n){
+sample(coinSpace,n,replace=TRUE)
+}
+CoinsMean<-mean(CoinSim1(10000))
+CoinsMean
+CoinsVariance<-var(CoinSim1(10000))
+CoinsVariance
+CoinsVariance * 2%
+CoinsVariance * .02
+coinS<-c(000,001,010,011,100,101,110,111)
+coinSim1<-sample(coinS,3,replace=TRUE)
+CoinSim1<-function(n){
+sample(coinSpace,n,replace=TRUE)
+}
+#Compute Sample Mean
+CoinsMean<-mean(CoinSim1(10000))
+#Compute Sample Variance
+CoinsVariance<-var(CoinSim1(10000))
+coinS
+coinSim1
+coinSim1(10000)
+coinS<-c(000,001,010,011,100,101,110,111)
+coinSim1<-sample(coinS,3,replace=TRUE)
+CoinSim1<-function(n){
+sample(coinSpace,n,replace=TRUE)
+}
+#Compute Sample Mean
+CoinsMean<-mean(CoinSim1(10000))
+#Compute Sample Variance
+CoinsVariance<-var(CoinSim1(10000))
+CoinSim1<-function(n){
+sample(coinSpace,n,replace=TRUE)
+}
+coinS<-c(000,001,010,011,100,101,110,111)
+coinSim1<-sample(coinS,3,replace=TRUE)
+CoinSim1<-function(n){
+sample(coinS,n,replace=TRUE)
+}
+CoinsMean<-mean(CoinSim1(10000))
+#Compute Sample Variance
+CoinsVariance<-var(CoinSim1(10000))
+CoinSim1(4)
+CoinSim1(1000)
+nQuest<-c(1:5)
+nOpt<-c(1:3)
+expand.grid(nQuest, nOpt)
+ProbEachQuest<-c(1/3)
+ProbEachQuest
+.8 * ProbEachQuest
+ProbEachQuest * 5
+(ProbEachQuest * 5)/.8
+(ProbEachQuest * 5)*.8
+ProbAtleast4Right<-{
+.8 * ProbEachQuest
+}
+ProbAtleast4Right

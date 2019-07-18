@@ -1,0 +1,64 @@
+c(students=m),ProdAtL2sB=1-prob((365:(365-m+1)/365))
+ProdAtL2sB=1-prob((365:(365-m+1)/365))
+m<-seq(10,50,5)
+ProbX<-function(m)
+{
+c(students=m)
+ProdAtL2sB=1-prob((365:(365-m+1)/365))
+}
+t(sapply(m,ProbX))
+c(students=m,
+ProdAtL2sB=1-prob((365:(365-m+1)/365)))
+t(sapply(m,ProbX))
+c(students=m,
+ProdAtL2sB=1-prob((365:(365-m+1)/365)))
+c(students=m,
+ProdAtL2sB=1-prob((365:(365-m+1)/365)))
+ProbX<-function(m)
+{
+c(students=m,
+ProdAtL2sB=1-prob((365:(365-m+1)/365)))
+}
+t(sapply(m,ProbX))
+ProbX
+ProbX(m)
+m<-1:60
+p<-numeric(60)
+for(i in m){q=prod((365:(365-i+1))/365),p[i]=1-q}
+for(i in m){q=prod((365:(365-i+1))/365);p[i]=1-q}
+ProbX<-function(m)
+{
+c(students=m,
+ProdAtL2sB=1-prod((365:(365-m+1)/365)))
+}
+t(sapply(m,ProbX))
+plot(m,p,col="skyblue3",pch=19,ylab="P(at Least 2 students with the same birthday)",xlab="m= Number of students in the room")
+Omega
+Omega<-expand.grid(roll1=1:6,roll2=1:6)
+Omega
+H<-subset(Omega,roll1+roll2==8)
+H
+H1<-subset(Omega,rol1+roll2==4)
+G<-subset(Omega,roll1==4)
+G
+PG<-dim(G)[1]
+PG
+PG<-dim(G)[1]/dim(Omega)[1]
+PG
+dim(Omega[1])
+subset
+subset
+HaG<-subset(Omega,roll1==4 & roll2==4)
+HaG
+PHaG<-dim(HaG)[1]/dim(Omega)[1]
+PHaG
+load("~/Documents/R Studio Projects/Quiz/Quiz2.RData")
+quiz<-data.frame(
+name = c("A","B","C","D","E","F"),
+score = c(68, 72,65,99,84,71)
+)
+mScore<-mean(score)
+n<-length(score)
+standDevi<-sqrt(sum((quiz$score - mScore)^2)/(n-1))
+standDevi
+sd(score)

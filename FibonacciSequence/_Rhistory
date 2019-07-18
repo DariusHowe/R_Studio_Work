@@ -1,0 +1,7 @@
+load("~/.RData")
+fibvals
+load("~/.RData")
+names()
+save.image("~/Documents/R Studio Projects/Fib.RData")
+fibvals
+fibvals

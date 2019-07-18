@@ -1,0 +1,81 @@
+set.seed(2)
+set.seed(2)
+actual<-sample(x=1:3,size=10000,replace=TRUE)
+equal<-(actual==aguess)
+aguess<-sample(x=1:3,size=10000,replace=TRUE)
+aguess
+equal<-(actual==aguess)
+PNoSwitch<-sum(equal)/10000
+not.equal<-(actual!=aguess)
+PSwitch<-sum(not.equal)/10000
+Omega<-expand.grid(coin1=0:1,coin2=0:1,coin3=0:1)
+View(Omega)
+Omega
+n.heads<-apply(Omega,1,sum)
+n.heads
+cbind(Omega,n.heads)
+table(n.heads)
+table(n.heads)/length(n.heads)
+coinToss<-expand.grid(coin1=H:T,coin2=H:T,coin3=H:T)
+coinToss<-expand.grid(coin1="H":"T",coin2="H":"T",coin3="H":"T")
+x<-c(1,5,30)
+px<-c(0.5,0.45,0.05)
+Ex<-sum(x*px)
+Wm<-weighted.mean(x,px)
+Vx<-sum(x^2*px)
+VX<-weighted.mean(x^2,px)-Ex^2
+Vx<-sum(x^2*px)-Ex^2
+Ex
+Vx
+VX
+px
+x
+Wm
+library(plyr)
+revalue(coinToss, c(coin1="H":"T",coin2="H":"T",coin3="H":"T"))
+coinToss<-expand.grid(coin1=0:1,coin2=0:1,coin3=0:1)
+revalue(coinToss, c(coin1="H":"T",coin2="H":"T",coin3="H":"T"))
+coinToss<-expand.grid(coin1=c("H":"T"),coin2=c("H":"T"),coin3=c("H":"T"))
+> coinToss<-expand.grid(coin1="H":"T",coin2="H":"T",coin3="H":"T")
+coinToss<-expand.grid(coin1=c("H":"T"),coin2=c("H":"T"),coin3=c("H":"T"))
+coinToss<-expand.grid(coin1=c("H":"T"),coin2=c("H":"T"),coin3=c("H":"T"))
+coinToss<-expand.grid(coin1=c("H","T"),coin2=c("H","T"),coin3=c("H","T"))
+coinToss
+nhead<-apply(coinToss,H,sum)
+nhead<-apply(coinToss,"H",sum)
+n.heads<-apply(coinToss,"H",sum)
+coinToss$probability<-probability
+probability<-c(1/8)
+coinToss$probability<-probability
+coinToss
+probSame<-function(coinToss)
+{
+if(coin1 & coin2 & coin3 =="H" | coin1 & coin2 &coin3 =="T")
+{
+answer<-2*(probability)
+}
+print(answer)
+}
+probSame(coinToss)
+coin1=c("H","T"),coin2=c("H","T"),coin3=c("H","T")
+coin1=c("H","T")
+coin2=c("H","T")
+coin3=c("H","T")
+probSame<-function(coinToss)
+{
+if(coin1 & coin2 & coin3 =="H" | coin1 & coin2 &coin3 =="T")
+{
+answer<-2*(probability)
+}
+print(answer)
+}
+probSame(coinToss)
+probSame<-function(coinToss)
+{
+1/4
+}
+probSame(coinToss)
+View(coinToss)
+plot(vals,ylab="Occurrances based on table" ,xlab="# of Times Heads")
+vals<-table(n.heads)/length(n.heads)
+plot(vals,ylab="Occurrances based on table" ,xlab="# of Times Heads")

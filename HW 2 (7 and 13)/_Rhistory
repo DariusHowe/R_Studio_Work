@@ -1,0 +1,512 @@
+)
+WheatMax
+WheatMin
+#Min Value
+WheatMin <-(
+min(wheatspain, na.rm=TRUE)
+)
+print(WheatMin)
+#Max Value
+WheatMax <-as.integer(
+max(wheatspain, na.rm=TRUE)
+)
+print(WheatMax)
+WheatMax
+wheatspain
+#Min Value
+WheatMin <-(min(wheatspain))
+WheatMin
+max(wheatspain)
+wheatspain
+max(wheat.surface)
+max(wheat.surface$wheat.surface, na.rm=TRUE)
+max(wheatspain$wheat.surface, na.rm=TRUE)
+min(wheatspain$wheat.surface, na.rm=TRUE)
+#Min Value
+WheatMin<-(
+min(wheatspain$wheat.surface, na.rm=TRUE)
+)
+WheatMin
+WheatMax
+WheatMin
+#Min Value
+WheatMin <-(
+min(wheatspain$wheat.surface, na.rm=TRUE)
+)
+WheatMax
+max(wheatspain$wheat.surface, na.rm=TRUE)
+WheatMax<-max(wheatspain$wheat.surface, na.rm=TRUE)
+WheatMax
+WheatMin
+WheatRange<-WheatMax-WheatMin
+WheatRange
+#Range
+WheatRange <-(
+WheatMax-WheatMin
+)
+WheatRange
+WheatMax
+WheatMin
+wheatspain
+save.image("~/Documents/R Studio Projects/HW 2 (7 and 13)/HW.RData")
+wheatspain[order(wheatspain$wheat.surface),]
+OrderWheat
+OrderWheat<-(wheatspain[order(wheatspain$wheat.surface),])
+OrderWheat
+wheatspain[rev(OrderWheat)]
+wheatspain[rev(order(wheatspain$wheat.surface)),]
+WheatOrder<-wheatspain[rev(order(wheatspain$wheat.surface)),]
+WheatOrder
+head(wheatspain,-1)
+wheatspain
+head(WheatOrder, -1)
+wheat
+wheat<-(head(WheatOrder, -1))
+wheat
+wheat2<-WheatOrder
+wheat2
+WheatOrder
+acre<-c(.40468564224)
+wheatspain$acres<-(wheat.surface*acre)
+wheatspain
+wheatspain$acres
+View(wheatspain)
+wheatspain$acres<-wheat.surface*acre
+wheat.surface
+community
+wheatspain <- data.frame(
+community = c("Galicia","Asturias","Cantabria","Pais Vasco","Navarra","La Rioja","Aragon","Cataluna","Islas Baleares","Castilla y Leon","Madrid","Castilla La Mancha","C. Valenciana","Region de Murcia","Extremadura","Andalucia","Islas Canarias"),
+wheat.surface = c(18817,65,440,25143,66326,34214,311479,74206,7203,619858,13118,263424,6111,9500,143250,558292,100)
+)
+wheatspain <- data.frame(
+community = c("Galicia","Asturias","Cantabria","Pais Vasco","Navarra","La Rioja","Aragon","Cataluna","Islas Baleares","Castilla y Leon","Madrid","Castilla La Mancha","C. Valenciana","Region de Murcia","Extremadura","Andalucia","Islas Canarias"),
+wheat.surface = c(18817,65,440,25143,66326,34214,311479,74206,7203,619858,13118,263424,6111,9500,143250,558292,100)
+)
+community
+community = c("Galicia","Asturias","Cantabria","Pais Vasco","Navarra","La Rioja","Aragon","Cataluna","Islas Baleares","Castilla y Leon","Madrid","Castilla La Mancha","C. Valenciana","Region de Murcia","Extremadura","Andalucia","Islas Canarias")
+wheat.surface = c(18817,65,440,25143,66326,34214,311479,74206,7203,619858,13118,263424,6111,9500,143250,558292,100)
++ )
+wheat.surface = c(18817,65,440,25143,66326,34214,311479,74206,7203,619858,13118,263424,6111,9500,143250,558292,100)
+)
+wheat.surface = c(18817,65,440,25143,66326,34214,311479,74206,7203,619858,13118,263424,6111,9500,143250,558292,100))
+wheat.surface = c(18817,65,440,25143,66326,34214,311479,74206,7203,619858,13118,263424,6111,9500,143250,558292,100)
+wheatspain$acres<-wheat.surface*acre
+wheatspain
+View(wheatspain)
+WheatAcres<-()
+WheatAcres<-(wheatspain$acres<-wheat.surface*acre)
+WheatAcres
+sum(wheatspain$wheat.surface)
+WheatSurface.sum<-()
+WheatSurface.sum<-(sum(wheatspain$wheat.surface))
+WheatSurface.sum
+WheatSurface.acre<-(sum(wheatspain$acres))
+WheatSurface.acre
+row.names.wheatspain
+row.names.data.frame
+row.names(wheatspain)
+View(wheatspain)
+row.names(wheatspain) <-(community)
+drops<-(community)
+wheatspain[, !(names(wheatspain) %in% drops)]
+wheatspain2<-(wheatspain[, !(names(wheatspain) %in% drops)])
+wheatspain2
+save.image("~/Documents/R Studio Projects/HW 2 (7 and 13)/WheatHW.RData")
+wheat2<-WheatOrder
+wheat2
+wheat
+wheatspain[, !(names(wheatspain) %in% drops)]
+View(wheat)
+wheatspain$acres
+WheatOrganized<-(wheatspain[order(wheatspain$community),]
+)
+WheatOrganized
+WheatLess<- if(wheatspain$acres<40000)
+{}
+WheatLess<- if(wheatspain$acres<40000){wheatspain}
+WheatOrganized
+View(wheatspain2)
+WheatLess<-with(wheatspain, acres[acres<40000])
+WheatLess
+sum.acres<-(sum(WheatLess))
+sum.acres
+wheatspain
+wheat
+wheatspain
+QUIT
+quit()
+quiz<-data.frame(name = c("A","B","C","D","E","F") score = c(68, 72,65,99,84,71))
+quiz<-data.frame(
+name = c("A","B","C","D","E","F"),
+score = c(68, 72,65,99,84,71)
+)
+quiz
+name = c("A","B","C","D","E","F")
+score = c(68, 72,65,99,84,71)
+sd(score)
+mean(score)
+n<-length(score)
+n
+x<-rnorm(n,mean,sd)
+x<-rnorm(n=6,mean=76.5)
+x
+x<-quix
+x<-quiz
+sqrt(sum((for(i in x$score)-mean)^2)/(n-1))
+sqrt(sum((quiz$score- mean(score))^2)/(n-1))
+calcSD<-sqrt(sum((quiz$score- mean(score))^2)/(n-1))
+calcSD
+print(sd(score), calcSD)
+print(calcSD)
+calcSD
+sd(score)
+#formula for stdndevi
+#Take Sqrt of the sum of each element in the column score for the dataframe quiz,
+#subtract the mean of the column score,
+#square that answer,
+#then divide by the length of the number of scores -1
+sqrt(sum((quiz$score- mean(score))^2)/(n-1))
+save.image("~/Documents/R Studio Projects/Quiz/Quiz2.RData")
+View(wheat)
+View(x)
+mean(score)
+sd(score)
+load("~/Documents/R Studio Projects/HW 2 (7 and 13)/WheatHW.RData")
+wheat.txt<-dump(file="wheat.R", append=TRUE)
+wheat.txt<-dump(list, file="wheat.R", append=TRUE)
+wheat.txt<-dump(list, file="wheat.R", append=TRUE, envir=parent.frame(), evaluate =TRUE)
+grades<-("A","D","C","D","C","C","C","C","F","B")
+grades<-c("A","D","C","D","C","C","C","C","F","B")
+grades
+table(grades)
+library()
+library(MASS)
+MASS
+search(package.MASS)
+library(datasets)
+search(package.datasets)
+datasets
+clear()
+clear
+temps<-c(18,20,22,24,26,28)
+celsius<-data.frame(
+temps
+)
+View(celsius)
+View(celsius)
+slope<-c(1.8)
+constant<-c(32)
+constant
+celsius$fahrenheit<-((slope*temps) +32)
+View(celsius)
+celsius
+celsius
+temps
+fahrenheit
+fahrenheit<-((slope*temps) +32)
+celsius$fahrenheit
+names<-c("Peter","Mary","Ann","June","John","Kevin")
+score<-c(100,91,90,83,100,89)
+testing<-data.frame(names,score)
+View(testing)
+View(testing)
+testing
+n<-length(score)
+tScore<-sum(score)
+tScore
+meanScore<-(tScore/n)
+meanScore
+mean(score)
+scoreOrganized<-(testing[order(testing$score),])
+scoreOrganized
+View(wheatspain2)
+row.names(testing)<-(testing$names)
+testing
+row.names(scoreOrganized)<-(scoreOrganized$names)
+scoreOrganized
+scoreOrganized(score)
+scoreOrganized<-data.frame(score)
+scoreOrganized
+scoreOrganized<-(testing[order(testing$score),])
+scoreOrganized
+median(scoreOrganized$score)
+medianScore<-(if(n %% 2!=0)
+(score((n/2))+score((n/2)+1)/2)
+)
+medianScore
+medianScore<-(if(n %% 2==0)
+(score((n/2))+score((n/2)+1)/2)
+)
+medianScore<-(if(n %% 2==0)
+((score/2)+((score/2)+1)/2)
+)
+medianScore
+medianScore<-(if(n %% 2==0){
+((score/2)+((score/2+)1)/2)
+}
+)
+save.image("~/Documents/R Studio Projects/MeanMedianHW/MeanMedian.RData")
+ls(packages)
+ls(packages:stats)
+ls(packages:stats)
+install.packages("MASS")
+search()
+ls(package:dataset)
+ls
+iris
+women
+mean(women$height)
+mean(women$weight)
+sd(women$height)
+var(women$height)
+cor(women$height,women$weight)
+wiuth(data=women,plot(women$height))
+with(data=women,plot(women$height))
+with(data=women,plot(women$weight))
+with(data=women,plot(women$height, women$weight))
+n
+women
+n<-length(women)
+n
+n<-length(women)
+n
+n<-15
+n
+n<-length(women$height)
+n
+begining<-(1/(1-n))
+sdHeight
+sdHeight<-sd(women$height)
+sdHeight
+meanHeight
+meanHeight<-mean(women$height)
+sdWeight<-sd(women$weight)
+meanWeight<-mean(women$weight)
+f1<-((women$height-meanHeight)/(sdHeight))
+f2<-((women$weight-meanWeight)/(sdWeight))
+f1
+begining*sum(f1*f2)
+begining
+begining
+begining<- (1/(1-n))
+begining
+begining<- (1/(n-1))
+begining*sum(f1*f2)
+#check with actual correlation answer
+trueCor<-cor(women$height, women$weight)
+trueCor
+save.image("~/Documents/R Studio Projects/ClassMondayFeb5th/Cor. Data.RData")
+fT
+n<-length(women$height)
+x<-mean(women$height)
+y<-mean(women$weight)
+short<-((women$height-x)*(women$weight-y))
+bottom<((women$height-x)^2)
+f1<-(sum(short))
+f2<-(sum(bottom))
+fT<-((f1)/(f2))
+n<-length(women$height)
+x<-mean(women$height)
+y<-mean(women$weight)
+short<-((women$height-x)*(women$weight-y))
+bottom<-((women$height-x)^2)
+f1<-(sum(short))
+f2<-(sum(bottom))
+fT<-((f1)/(f2))
+fT
+save.image("~/Documents/R Studio Projects/ClassMondayFeb5th/Beta.Data.RData")
+b0
+b0<-((women$weight)-fT(women$height))
+ft
+fT
+b0<-((women$weight)-fT*(women$height))
+b0
+b01<-meanWeight-fT*meanHeight
+b01
+fact<-function(x){
+y<-1
+for(i in 1:x){
+y<-y*((1:x)[i])
+}
+print(y)
+}
+fact(7)
+factorial(7)
+save.image("~/Documents/R Studio Projects/ClassMondayFeb5th/fact.Data.RData")
+fact(1)
+fact(0)
+factorial(0)
+fact(1)
+y<-y*((0:x)[i])
+fact(0)
+fact(1)
+fact2
+fact(2)
+factorial(2)
+factorial(3)
+fact((3))
+fact(1)
+fact(.2)
+fact(.4)
+fact(1.34)
+fact(5.6)
+factorial(5.6)
+#Factorial Program
+fact<-function(x){
+y<-1
+for(i in 1:x){
+y<-y*((1:x)[i])
+}
+if( (x %% 1)= 0){
+y<-(y*((1:x)[i])*gamma((1:x[i])))
+}
+else{
+y<-y*((1:x)[i])
+}
+print(y)
+}
+load("~/Documents/R Studio Projects/HW 2 (7 and 13)/WheatHW.RData")
+fact(.8)
+fact<-function(x){
+y<-1
+for(i in 1:x){
+if( (x %% 1)= 0)
+{
+y<-(y*((1:x)[i])*gamma((1:x[i])))
+}
+else
+{
+y<-y*((1:x)[i])
+}
+}
+print(y)
+}
+fact<-function(x){
+y<-1
+for(i in 1:x){
+if( (x %% 1)!= 0)
+{
+y<-(y*((1:x)[i])*gamma((1:x[i])))
+}
+else
+{
+y<-y*((1:x)[i])
+}
+}
+}
+fact(1.2)
+fact(3.3)
+fact(3)
+gamma(1.2)
+fact(3)
+#Factorial Program
+fact<-function(x){
+y<-1
+for(i in 1:x){
+if(x %% 1!= 0)
+{
+y<-(y*((1:x)[i])*gamma((1:x[i])))
+}
+else
+{
+y<-y*((1:x)[i])
+}
+}
+print(y)
+}
+fact(4)
+factorial(4)
+fact(3.2)
+fact(3)
+factorial(3)
+factorial(3.2)
+fact(3.2)
+fact(3)
+fact(4)
+fact(10)
+factorial(10)
+factorial(.2)
+fact(.2)
+ls(package:dataset)
+standDevi<-sqrt(sum((quiz$score- mean(score))^2)/(n-1))
+n<-length(score)
+mean(score)
+standDevi<-sqrt(sum((quiz$score- mean(score))^2)/(n-1))
+standDevi
+sd(score)
+quiz<-data.frame(
+name = c("A","B","C","D","E","F"),
+score = c(68, 72,65,99,84,71)
+)
+mean(score)
+mScore
+#Calculate The Mean
+mScore<-mean(score)
+mScore
+standDevi<-sqrt(sum((quiz$score- mScore)^2)/(n-1))
+sd(score)
+load("~/Documents/R Studio Projects/Quiz/Quiz2.RData")
+quiz
+mScore
+n
+standDevi
+standDevi<-sqrt(sum((quiz$score- mScore))^2/(n-1))
+standDevi
+standDevi
+standDevi<-sqrt(sum((quiz$score- mScore)^2)/(n-1))
+standDevi
+package(CARS2004)
+install.packages("CARS2004")
+fact(1.2)
+factorial(1.2)
+fact(1.4)
+factorial(1.4)
+fact(3)
+fact(6)
+factorial(6)
+fact(1.2)
+fact(1.2)
+gamma(1.2)
+fact(1.2)
+fact(0)
+fact(0)
+y<-1
+fact(0)
+y
+}
+print(y)
+fact(0)
+fact(1)
+fact(2)
+fact(3)
+#Factorial Program
+dummie<-"You done Messed Up"
+fact(-1)
+fact(1)
+fact(-3)
+{
+y<-y*((0:x)[i])
+}
+y<-y*((1:x)[i])
+{
+y<-y*((1:x)[i])
+}
+fact(1)
+fact(0)
+fact(.3)
+fact(9)
+standDevi
+quiz<-data.frame(
+name = c("A","B","C","D","E","F"),
+score = c(68, 72,65,99,84,71)
+)
+quiz<-data.frame(
+name = c("A","B","C","D","E","F"),
+score = c(68, 72,65,99,84,71)
+)
+quiz
+mScore<-mean(score)
+n<-length(score)
+standDevi<-sqrt(sum((quiz$score - mScore)^2)/(n-1))
+standDevi
+sd(score)
